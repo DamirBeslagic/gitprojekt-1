@@ -6,18 +6,33 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>IT-L@B Github</title>
+    <style>
+        .cls-1 {
+    fill: transparent;
+        stroke: #1d1d1b;
+        stroke-miterlimit: 10;
+        stroke-dasharray: 50;
+            transition: 1s;
+    }</style>
 </head>
 <body>
 <h1>Github</h1>
-<div>class="git"</div>
 
-<form action=""></form>
+<svg id="Ebene_1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 898.14 508.37">
+<path class="cls-1"
+      d="M199.45,305.94c284.68,11.29,259.68-176.62,275.81-2.42S577.68,21.26,760.74,189s410.49,166.94-60.48,249.19S30.1,178.52,409.13,148.68s584.68-266.94,668.55-57.26S946.23,513.19,946.23,513.19"
+      transform="translate(-199.43 -5.18)"/>
+</svg>
+<button id="button">click me</button>
+<script>
+    var path = document.querySelector('.cls-1')
+    path.style.strokeDasharray = path.getTotallength();
+    path.style.strokeDashoffset = path.getTotallength();
 
-
-
-
-
-
-
+    var button = document.querySelector('#button');
+    button.addEventListener('click', function () {
+        path.style.strokeDashoffset = 0;
+    });
+</script>
 </body>
 </html>
